@@ -1,0 +1,55 @@
+/* Navbar container */
+nav {
+    background-color: #2563eb; /* Blue background */
+    padding: 1rem; /* Padding around the navbar */
+  }
+  
+  /* Container for the navbar items */
+  .container {
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Brand name / Logo */
+  nav a.text-lg {
+    font-size: 1.125rem; /* Font size for the brand */
+    font-weight: 700; /* Bold font */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color changes */
+  }
+  
+  nav a.text-lg:hover {
+    color: #f9fafb; /* Slightly lighter color on hover */
+  }
+  
+  /* Navigation links */
+  nav div a {
+    font-size: 1rem; /* Font size for links */
+    color: #ffffff; /* White text */
+    margin-left: 1rem; /* Spacing between links */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color changes */
+  }
+  
+  /* Hover effect on links */
+  nav div a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    nav div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav div a {
+      margin: 0.5rem 0; /* Add vertical margin for mobile */
+    }
+  }
+  

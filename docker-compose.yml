@@ -9,9 +9,9 @@ services:
       MYSQL_USER: my_user
       MYSQL_PASSWORD: my_password
     ports:
-      - "3306:3306"
+      - '3307:3306'
     volumes:
-        - ./backend/scripts:/docker-entrypoint-initdb.d
+      - ./backend/scripts:/docker-entrypoint-initdb.d
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
@@ -20,7 +20,7 @@ services:
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: root_password
     ports:
-      - "8080:80"
+      - '8080:80'
     depends_on:
       - mysql
 
@@ -28,7 +28,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "3000:3000"
+      - '3000:3000'
     volumes:
       - ./frontend:/usr/src/app
     depends_on:
@@ -37,7 +37,7 @@ services:
     build:
       context: ./backend
     ports:
-      - "5000:5000"
+      - '5000:5000'
     depends_on:
       - mysql
     environment:

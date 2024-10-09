@@ -1,0 +1,98 @@
+
+/* General container styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0px 0px 4px #93c5fd;
+}
+
+input[type="text"]::placeholder, input[type="date"]::placeholder {
+  color: #9ca3af;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+/* Navbar and form alignment */
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  form {
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  input[type="text"], input[type="date"] {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+}
